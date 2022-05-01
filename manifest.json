@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Open Fixture in Picture",
+  "name": "Fixture in Picture Browser Extension",
   "version": "1.0.0",
   "description": "Open Fixture in Picture App from your browser.",
   "icons": {
