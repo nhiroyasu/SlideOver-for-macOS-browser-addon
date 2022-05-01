@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Open Fixture in Picture",
+  "version": "1.0.0",
+  "description": "Open Fixture in Picture App from your browser.",
+  "icons": {
+    "48": "assets/icon48.png",
+    "96": "assets/icon96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["./build/content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "./build/background.js"
+  },
+  "action": {
+    "default_icon": "./assets/icon48.png",
+    "default_title": "Open Fixture in Picture",
+    "default_popup": "./src/popup/index.html",
+    "browser_style": true
+  },
+  "permissions": ["contextMenus", "tabs"],
+  "host_permissions": ["*://*/*"]
+}
